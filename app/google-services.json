@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "358584755160",
+    "project_id": "farm-elp",
+    "storage_bucket": "farm-elp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358584755160:android:a2719125f0f24e9a3408ad",
+        "android_client_info": {
+          "package_name": "com.example.farm_elp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358584755160-drp19fgbsptsiqa9olbe7pum5667ebpk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4_0MhTJ1UaVz_DZNoIfpK-u_zGZfBTrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358584755160-drp19fgbsptsiqa9olbe7pum5667ebpk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

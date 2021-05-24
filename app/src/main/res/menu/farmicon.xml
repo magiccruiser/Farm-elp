@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/home"
+            android:icon="@drawable/ic_baseline_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/addItem"
+            android:icon="@drawable/ic_baseline_additem"
+            android:title="Your Products" />
+        <item
+            android:id="@+id/notification"
+            android:icon="@drawable/ic_baseline_messages"
+            android:title="Notifications" />
+    </group>
+
+
+    <item android:title="Status">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/settings"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="Settings" />
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_baseline_person_24"
+                    android:title="Profile" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="User">
+        <menu>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/login"
+                    android:icon="@drawable/ic_baseline_login_24"
+                    android:title="Login" />
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_baseline_subdirectory_logout"
+                    android:title="Logout" />
+                <item
+                    android:id="@+id/rating"
+                    android:icon="@drawable/ic_baseline_rate_review_24"
+                    android:title="Rate us" />
+            </group>
+        </menu>
+    </item>
+</menu>

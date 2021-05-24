@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Farm-elp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sync_pref">Sync</string>
+    <string name="sync_pref_summary">
+        get your photos, videos, contacts, subscription etc on all your devices.
+    </string>
+
+    <string name="pref_syncConnectionType">Sync Connection Type</string>
+    <string name="pref_syncConnectionType_dialog_title">Perform Sync Using</string>
+    <string name="pref_syncConnectionType_default_value">Wifi</string>
+    <string name="pref_syncConnectionType_summary">Wifi</string>
+
+    <string-array name="pref_syncConnectionType_entries">
+        <item>Wifi</item>
+        <item>Mobile Data</item>
+        <item>Wifi/Mobile Data</item>
+    </string-array>
+
+    <string-array name="pref_syncConnectionType_values">
+        <item>Wifi</item>
+        <item>Mobile Data</item>
+        <item>Wifi/Mobile Data</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="invalid_name">User Name is Not Valid</string>
+    <string name="invalid_adhaar">Check Adhaar Details</string>
+    <string name="invalid_phone">Check Phone Number.</string>
+    <string name="invalid_email">Check Email-ID</string>
+    <string name="invalid_address">Check Address</string>
+    <string name="invalid_pass">"Should be 8 or more "</string>
+    <string name="invalid_confirmpass">Not same, Check again</string>
+    <string name="not_empty">Field Should not be empty</string>
+    <string name="invalid_quantity">Quantity should be not greater than 999</string>
+
+
+    <!-- TODO: Add unit of item -->
+    <string-array name="units">
+        <item>KG</item>
+        <item>G</item>
+        <item>L</item>
+        <item>unit</item>
+    </string-array>
+
+    <!-- TODO: Add type of item -->
+    <string-array name="itemType">
+        <item>sowing</item>
+        <item>tool</item>
+        <item>places</item>
+    </string-array>
+</resources>
