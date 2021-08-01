@@ -1,6 +1,5 @@
 package com.example.farm_elp.model;
 
-import com.google.protobuf.Empty;
 
 import java.io.Serializable;
 
@@ -8,28 +7,32 @@ public class UserData implements Serializable {
     public static String fullName, email, address;
     public static long phoneNo, adhaarID;
     public static String password;
-
+    public static String profession;
 
 
     //---------------------------------Constructors-----------------------------------
-   public UserData(){}
-    public UserData(String fullName, String email, String address, long phoneNo, long adhaarID, String create_password) {
-        this.fullName = fullName;
-        this.email = email;
-        this.address = address;
-        this.phoneNo = phoneNo;
-        this.adhaarID = adhaarID;
-        this.password = create_password;
+    public UserData() {
+    }
+
+    public UserData(String fullName, String email, String address, long phoneNo, long adhaarID, String create_password, String prof) {
+        UserData.fullName = fullName;
+        UserData.email = email;
+        UserData.address = address;
+        UserData.phoneNo = phoneNo;
+        UserData.adhaarID = adhaarID;
+        password = create_password;
+        profession = prof;
     }
 
     //---------------------------------Getters and Setters-----------------------------------
+
 
     public String getFullName() {
         return fullName;
     }
 
     public void setFullName(String fullName) {
-        this.fullName = fullName;
+        UserData.fullName = fullName;
     }
 
     public String getEmail() {
@@ -37,7 +40,7 @@ public class UserData implements Serializable {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        UserData.email = email;
     }
 
     public String getAddress() {
@@ -45,7 +48,7 @@ public class UserData implements Serializable {
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        UserData.address = address;
     }
 
     public long getPhoneNo() {
@@ -53,7 +56,7 @@ public class UserData implements Serializable {
     }
 
     public void setPhoneNo(long phoneNo) {
-        this.phoneNo = phoneNo;
+        UserData.phoneNo = phoneNo;
     }
 
     public long getAdhaarID() {
@@ -61,7 +64,7 @@ public class UserData implements Serializable {
     }
 
     public void setAdhaarID(long adhaarID) {
-        this.adhaarID = adhaarID;
+        UserData.adhaarID = adhaarID;
     }
 
     public String getPassword() {
@@ -69,7 +72,38 @@ public class UserData implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        UserData.password = password;
+    }
+
+    public String getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession) {
+        UserData.profession = profession;
+    }
+
+    public String dataToString() {
+        return "UserData{" +
+                "fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNo=" + phoneNo +
+                ", adhaarID=" + adhaarID +
+                ", password='" + password + '\'' +
+                ", profession='" + profession + '\'' +
+                '}';
+    }
+
+    public void clear() {
+        fullName = "";
+        email = "";
+        address = "";
+        phoneNo = 0;
+        adhaarID = 0;
+        password = "";
+        profession = "";
+
     }
 
 }

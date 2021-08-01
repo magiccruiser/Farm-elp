@@ -3,31 +3,25 @@
     package="com.example.farm_elp">
 
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-
     <uses-feature android:name="android.hardware.type.WATCH" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/app_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Farmelp">
-        <activity android:name=".Activity.Contact_ShoppingList"></activity>
-        <activity android:name=".StartingActivity.Splash_Screen_Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".Activity.SettingActivity"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
-
+        android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
         <uses-library
             android:name="com.google.android.wearable"
             android:required="false" />
+
         <!--
                Set to true if your app is Standalone, that is, it does not require the handheld
                app to run.
@@ -37,30 +31,46 @@
             android:value="false" />
 
         <activity
-            android:name=".Activity.Login"
+            android:name=".Activity.DrawerActivity.ContactSeller.ContactActivity"/>
+
+        <activity
+            android:name=".Activity.MainPageActivity.PublicPageActivity.MainPage"
+            android:parentActivityName=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage" />
+        <activity android:name=".Activity.CartActivity.Cart_ContactList" />
+
+        <activity android:name=".Activity_Starting.Splash_Screen_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activity.SettingActivity"
+            android:parentActivityName=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage" />
+
+        <activity
+            android:name=".Activity.LoginRegistration.Login"
             android:allowTaskReparenting="true"
-            android:parentActivityName=".StartingActivity.StartingActivity" />
+            android:parentActivityName=".Activity_Starting.StartingActivity" />
+
         <activity
-            android:name=".Activity.Registration"
+            android:name=".Activity.LoginRegistration.Registration"
             android:allowTaskReparenting="true"
-            android:parentActivityName=".StartingActivity.StartingActivity" />
+            android:parentActivityName=".Activity_Starting.StartingActivity" />
+
         <activity
-            android:name=".MyProduct_Activity.MyProductsActivity"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
+            android:name=".Activity.DrawerActivity.Notification.NotificationActivity"
+            android:parentActivityName=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage" />
         <activity
-            android:name=".Activity.PlacesActivity"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
-        <activity
-            android:name=".MyProduct_Activity.ItemDetail"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
-        <activity
-            android:name=".Activity.ToolsActivity"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
-        <activity
-            android:name=".Activity.SowingActivity"
-            android:parentActivityName=".Navigation.MainActivity_NavigationPage" />
-        <activity android:name=".Navigation.MainActivity_NavigationPage"></activity>
-        <activity android:name=".StartingActivity.StartingActivity"></activity>
+            android:name=".Activity.DrawerActivity.MyProduct.MyProductsActivity"
+            android:parentActivityName=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage" />
+
+        <activity android:name=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage"
+            android:parentActivityName=".Activity.MainPageActivity.MainPageClickItemActivity.MainActivity_NavigationPage" />
+
+        <activity android:name=".Activity_Starting.StartingActivity" />
     </application>
 
 </manifest>

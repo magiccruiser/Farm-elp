@@ -5,7 +5,8 @@ import android.util.Patterns;
 import com.basgeekball.awesomevalidation.AwesomeValidation;
 import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.basgeekball.awesomevalidation.utility.RegexTemplate;
-import com.example.farm_elp.Activity.Registration;
+import com.example.farm_elp.Activity.LoginRegistration.Login;
+import com.example.farm_elp.Activity.LoginRegistration.Registration;
 import com.example.farm_elp.R;
 
 public class UserValidation {
@@ -26,9 +27,19 @@ public class UserValidation {
 
         awesomeValidation.addValidation(registration, R.id.confirmpass,R.id.createpass, R.string.invalid_confirmpass);
 
+        awesomeValidation.addValidation(registration, R.id.profession, RegexTemplate.NOT_EMPTY, R.string.validProfesssion);
+
         awesomeValidation.addValidation(registration, R.id.createpass, "^.{8,}$",R.string.invalid_pass);
 
         return awesomeValidation.validate();
     }
 
+    public boolean checkLoginCredentials(Login login){
+
+        awesomeValidation.addValidation(login, R.id.login_email, Patterns.EMAIL_ADDRESS
+                ,R.string.invalid_email);
+        awesomeValidation.addValidation(login, R.id.createpass, "^.{8,}$",R.string.invalid_pass);
+
+        return awesomeValidation.validate();
+    }
 }

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/closePopUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="10dp"
+        android:layout_alignParentRight="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/user_detail_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:scrollbars="vertical"
+                    android:text="Buyer Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/view2"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:elevation="12dp"
+                            android:paddingLeft="20dp"
+                            android:innerRadius="0dp"
+                            android:layout_gravity="center"
+                            android:shape="ring"
+                            android:thicknessRatio="1.9"
+                            android:layout_margin="10dp"
+                            app:cardCornerRadius="100dp">
+
+                            <ImageView
+                                android:id="@+id/user_detail_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentTop="true"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/default_profile"></ImageView>
+                        </androidx.cardview.widget.CardView>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/discription_textView"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:fontFamily="cursive"
+                            android:textSize="30dp"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:text="Buyer Description"
+                            />
+                        <ScrollView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:fillViewport="true"
+                            android:scrollbars="vertical">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/user_detail_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:scrollbars="vertical"
+                            android:layout_margin="10dp"
+                            android:textSize="20dp"
+                            android:textColor="@color/teal_700"
+                            android:text="Buyer email" />
+                        <TextView
+                            android:id="@+id/user_detail_address"
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:scrollbars="vertical"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/teal_700"
+                            android:text="Buyer Address" />
+                        <TextView
+                            android:id="@+id/user_detail_phone"
+                            android:layout_width="match_parent"
+                            android:layout_margin="10dp"
+                            android:ellipsize="end"
+                            android:scrollX="@dimen/cardview_default_radius"
+                            android:layout_height="wrap_content"
+                            android:textSize="20dp"
+                            android:textColor="@color/teal_700"
+                            android:text="Buyer PhoneNo" />
+                    </LinearLayout>
+                        </ScrollView>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/item_wanted_textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/black"
+                        android:text="Item wanted :" />
+                    <TextView
+                        android:id="@+id/user_item_wanted"
+                        android:layout_gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="20dp"
+                        android:textColor="@color/teal_700"
+                        android:text="item Name" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

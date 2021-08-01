@@ -10,7 +10,6 @@
     android:layout_marginTop="0dp"
     tools:layout_editor_absoluteX="0dp"
     tools:layout_editor_absoluteY="0dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-    style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 </androidx.appcompat.widget.Toolbar>
 

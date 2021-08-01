@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="#474f49"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MyProduct_Activity.MyProductsActivity">
+    tools:context=".Activity.DrawerActivity.MyProduct.MyProductsActivity">
     <include layout="@layout/toolbar"
         android:layout_marginTop="0dp"
         android:layout_width="match_parent"

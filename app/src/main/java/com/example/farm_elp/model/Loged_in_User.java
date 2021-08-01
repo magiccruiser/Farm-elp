@@ -2,36 +2,94 @@ package com.example.farm_elp.model;
 
 public class Loged_in_User {
 
-    public static String UID="";
-    public static String logged_UserName="";
-    public static long logged_Phone=0;
+    public static String fullName, email, address;
+    public static long phoneNo, adhaarID;
+    public static String password;
+    public static String profession;
 
-    public String getLogged_UserName() {
-        return logged_UserName;
+
+    //---------------------------------Constructors-----------------------------------
+    public Loged_in_User() {
     }
 
-    public void setLogged_UserName(String logged_UserName) {
-        Loged_in_User.logged_UserName = logged_UserName;
+    public Loged_in_User(String fullName, String email, String address, long phoneNo, long adhaarID, String create_password, String prof) {
+        UserData.fullName = fullName;
+        UserData.email = email;
+        UserData.address = address;
+        UserData.phoneNo = phoneNo;
+        UserData.adhaarID = adhaarID;
+        password = create_password;
+        profession = prof;
     }
 
-    public long getLogged_Phone() {
-        return logged_Phone;
+    //---------------------------------Getters and Setters-----------------------------------
+
+
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setLogged_Phone(long logged_Phone) {
-        Loged_in_User.logged_Phone = logged_Phone;
+    public void setFullName(String fullName) {
+        UserData.fullName = fullName;
     }
 
-    public String getUID() {
-        return UID;
+    public String getEmail() {
+        return email;
     }
 
-    public void setUID(String UID) {
-        this.UID = UID;
+    public void setEmail(String email) {
+        UserData.email = email;
     }
 
+    public String getAddress() {
+        return address;
+    }
 
-    public void removeLoginUser(){
-        UID="";
+    public void setAddress(String address) {
+        UserData.address = address;
+    }
+
+    public long getPhoneNo() {
+        return phoneNo;
+    }
+
+    public void setPhoneNo(long phoneNo) {
+        UserData.phoneNo = phoneNo;
+    }
+
+    public long getAdhaarID() {
+        return adhaarID;
+    }
+
+    public void setAdhaarID(long adhaarID) {
+        UserData.adhaarID = adhaarID;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        UserData.password = password;
+    }
+
+    public String getProfession() {
+        return profession;
+    }
+
+    public void setProfession(String profession) {
+        UserData.profession = profession;
+    }
+
+    public String dataToString() {
+        return "UserData{" +
+                "fullName='" + fullName + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", phoneNo=" + phoneNo +
+                ", adhaarID=" + adhaarID +
+                ", password='" + password + '\'' +
+                ", profession='" + profession + '\'' +
+                '}';
     }
 }

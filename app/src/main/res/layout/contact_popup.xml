@@ -40,6 +40,7 @@
                 android:fontFamily="cursive"
                 android:layout_margin="10dp"/>
             <TextView
+                android:id="@+id/call_context"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
@@ -53,20 +54,13 @@
                 android:orientation="horizontal"
                 android:gravity="center">
                 <Button
-                    android:id="@+id/send_call_request"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_margin="10dp"
-                    android:backgroundTint="@color/black"
-                    android:text="Call" />
-                <Button
                     android:id="@+id/cancel_call_request"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_margin="10dp"
                     android:backgroundTint="@color/black"
+                    android:textColor="@color/white"
                     android:text="Cancel" />
             </LinearLayout>
         </LinearLayout>

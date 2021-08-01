@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context=".Activity.Login">
+    tools:context=".Activity.LoginRegistration.Login">
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
@@ -39,22 +39,20 @@
 
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_phoneNo"
+            android:id="@+id/login_email"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            android:hint="Phone number"
-            app:counterEnabled="true"
-            app:counterMaxLength="10"
+            android:hint="Email-ID"
             android:elevation="20dp"
             android:textColorHint="@color/grey">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="number" />
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -64,6 +62,7 @@
             android:layout_height="wrap_content"
             android:padding="20dp"
             android:hint="Password"
+            app:counterEnabled="true"
             app:passwordToggleEnabled="true"
             android:elevation="20dp"
             android:textColorHint="@color/grey">

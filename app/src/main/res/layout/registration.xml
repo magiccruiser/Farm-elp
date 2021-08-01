@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Activity.Registration">
+    tools:context=".Activity.LoginRegistration.Registration">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -88,6 +88,8 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:counterMaxLength="10"
+                    app:counterEnabled="true"
                     android:hint="Phone number"
 
                     android:textColorHint="@color/grey">
@@ -103,6 +105,8 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="12"
                     android:hint="Adhaar-ID"
 
                     android:textColorHint="@color/grey">
@@ -129,17 +133,17 @@
 
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/product_brand"
+                    android:id="@+id/profession"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Product or Brand Name"
+                    android:hint="Your Profession"
                     android:textColorHint="@color/grey">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="textCapCharacters" />
+                        android:inputType="textAutoCorrect" />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -149,6 +153,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true"
+                    app:counterEnabled="true"
                     android:hint="Create password"
                     android:textColorHint="@color/grey">
 
@@ -165,6 +170,7 @@
                     android:layout_height="wrap_content"
                     app:passwordToggleEnabled="true"
                     android:hint="Confirm Password"
+                    app:counterEnabled="true"
                     android:textColorHint="@color/grey">
 
                     <com.google.android.material.textfield.TextInputEditText

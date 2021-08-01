@@ -6,12 +6,9 @@
     android:orientation="vertical"
     android:background="#474f49"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".Activity.Contact_ShoppingList">
+    tools:context=".Activity.CartActivity.Cart_ContactList">
 
-    <include layout="@layout/toolbar"
-        android:layout_marginTop="0dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+    <include layout="@layout/toolbar"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/shopping_recycler_public_itemView"
