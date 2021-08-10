@@ -1,5 +1,5 @@
 # Farm-elp
-## Android Application made by Pranshu Sahu
+## Android Application made by using java, firebase, XML on android studio
 
 # Description :-
 
